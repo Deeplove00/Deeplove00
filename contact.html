@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="theme-color" content="#0F4C81"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
+
+  <title>Contact Us | Smart Business Consulting</title>
+  <meta name="description" content="Contact us for a free 20‑minute consultation. We respect your privacy and never spam.">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo" href="index.html">Smart Business Consulting</a>
+  <nav>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a class="btn btn-cta" href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main class="container">
+  <h1>Contact</h1>
+  <form class="contact-form" onsubmit="return fakeSubmit(event)">
+    <label>
+      Name
+      <input type="text" required placeholder="Your name"/>
+    </label>
+    <label>
+      Email
+      <input type="email" required placeholder="you@example.com"/>
+    </label>
+    <label>
+      What do you want to achieve?
+      <textarea rows="4" placeholder="Briefly describe your goal"></textarea>
+    </label>
+    <button class="btn btn-cta btn-lg" type="submit" data-intent="form-submit">Request consultation</button>
+  </form>
+  <section class="privacy-note card">
+    <h2>Privacy & Ethics (Short Note)</h2>
+    <p>We collect only what you submit via this form and use it solely to respond to your enquiry. We do not sell data or add you to marketing lists without consent. We avoid dark patterns and design for informed choice. Cookies are limited to essential functionality only.</p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>© 2025 Smart Business Consulting. No spam. Your data is protected. Read the brief privacy note on the Contact page.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

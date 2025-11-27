@@ -1,0 +1,39 @@
+
+:root {
+  --primary: #0F4C81;
+  --accent: #FF6A00;
+  --neutral: #111827;
+  --bg: #ffffff;
+  --muted: #6b7280;
+}
+* { box-sizing: border-box; }
+html, body { margin:0; padding:0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color: var(--neutral); background: var(--bg); }
+a { color: var(--primary); text-decoration: none; }
+.site-header { display:flex; justify-content:space-between; align-items:center; padding: 16px 24px; border-bottom: 1px solid #e5e7eb; position: sticky; top:0; background:#fff; z-index:10; }
+.logo { font-weight: 700; color: var(--neutral); }
+.site-header nav a { margin-left: 16px; }
+.btn { display:inline-block; padding: 10px 16px; border-radius: 12px; border: 1px solid #e5e7eb; font-weight:600; }
+.btn-cta { background: var(--accent); color:#fff; border:none; }
+.btn-lg { padding: 14px 20px; font-size: 1.05rem; }
+.hero { padding: 72px 24px; background: linear-gradient(180deg,#f8fafc, #ffffff); border-bottom:1px solid #e5e7eb; }
+.hero-content { max-width: 960px; margin: 0 auto; text-align: left; }
+.hero h1 { font-size: clamp(2rem, 4vw, 3rem); line-height: 1.1; }
+.underline { box-shadow: inset 0 -0.4em 0 rgba(255,106,0,0.25); }
+.trust-hint { color: var(--muted); margin-top: 8px; }
+.container { max-width: 960px; margin: 24px auto; padding: 0 24px; }
+.grid { display:grid; gap: 16px; grid-template-columns: repeat(3, minmax(0,1fr)); padding: 24px; max-width: 1024px; margin: 0 auto; }
+.grid.two { grid-template-columns: repeat(2, minmax(0,1fr)); }
+.grid.three { grid-template-columns: repeat(3, minmax(0,1fr)); }
+.card { border:1px solid #e5e7eb; border-radius: 16px; padding: 20px; background:#fff; box-shadow: 0 2px 8px rgba(0,0,0,0.03); }
+.quote { border-left: 4px solid var(--primary); padding-left: 16px; margin: 0 0 16px 0; color:#111827; background:#f9fafb; border-radius: 8px; padding:16px; }
+.stack { display:flex; flex-direction:column; gap: 12px; }
+.cta-band { text-align:center; padding: 40px 24px; background:#f9fafb; border-top:1px solid #e5e7eb; }
+.cta-centered { text-align:center; margin-top: 24px; }
+.contact-form { display:grid; gap: 12px; max-width: 560px; }
+label { display:grid; gap:6px; font-weight: 600; }
+input, textarea { padding: 12px; border-radius: 12px; border:1px solid #e5e7eb; font: inherit; }
+.site-footer { border-top: 1px solid #e5e7eb; padding: 24px; text-align:center; color: var(--muted); }
+@media (max-width: 900px) {
+  .grid { grid-template-columns: 1fr; }
+  .site-header nav a { margin-left: 12px; }
+}
